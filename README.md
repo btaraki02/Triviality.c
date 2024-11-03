@@ -1,2 +1,2 @@
-# calculator.c
-This is my project about calculator ;)
+# Projects ;}
+Simple projects to develop thinking only :);
