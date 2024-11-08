@@ -4,7 +4,7 @@ int main (void){
    char op;
    int y;
 
-    printf("enter your namber x:");
+    printf("enter your number x:");
     
     scanf("%d", &x);
     //(\n)****
@@ -14,7 +14,7 @@ int main (void){
     
     scanf("%c", &op);
 
-    printf("enter your namber y:");
+    printf("enter your number y:");
     
     scanf("%d", &y);
 
