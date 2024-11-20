@@ -1,41 +1,49 @@
 #include <stdio.h>
+#include<math.h>
 int main (void){
-   int x;
-   char op;
-   int y;
-
-    printf("enter your number x:");
+   float x;
+    char k;
+   char Type_of_operation;
+   float y;
+    Again :
+    printf("\nenter your number x:");
     
-    scanf("%d", &x);
+    scanf("%f", &x);
     //(\n)****
     getchar();
 
-    printf(" what is op : + , - , / , * \n");
+    printf(" what is Type_of_operation : + , - , / , * , %% \n");
     
-    scanf("%c", &op);
+    scanf("%c", &Type_of_operation);
 
     printf("enter your number y:");
     
-    scanf("%d", &y);
+    scanf("%f", &y);
 
-    if (op == '+')
+    if (Type_of_operation == '+')
     {
-        printf(" x + y = %d", x + y);
+        printf(" x + y = %.2f\n", x + y);
         }
-    else if (op == '-')
+    else if (Type_of_operation == '-')
     {
-        printf(" x - y = %d", x - y);
+        printf(" x - y = %.2f\n", x - y);
         }
-    else if (op == '*'){
+    else if (Type_of_operation == '*'){
     
-    printf(" x * y = %d", x * y);
+    printf(" x * y = %.2f\n", x * y);
     }
-    else if (op == '/' && y != 0)
+    else if (Type_of_operation == '/' && y != 0)
     {
-        printf(" x / y = %d", x / y);
+        printf(" x / y = %.2f\n", x / y);
+        }
+    else if (Type_of_operation == '%' && (int)x == x && (int)y == y) { 
+    
+            printf("x %% y = %d\n", (int)x % (int)y);
+    
         }
     else
      {
         printf("Invalid operation or division by zero0!!!\n");
         }
+        goto Again;
 }

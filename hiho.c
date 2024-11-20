@@ -14,10 +14,10 @@ while(i < 6){
 if( number > 20 || number < 0)
 continue;
 if(GO > number){
-    printf("it is small\n");
+    printf("it is too small\n");
 }
 else if(GO < number ){
-    printf("it is big\n");
+    printf("it is  too big\n");
 }
 if(number == GO)
 {
